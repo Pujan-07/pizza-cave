@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Page</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza cave</h1>
+    </header>
+    <main>
+        <section class="order-form">
+            <h2>Order Your Pizza</h2>
+            <form>
+                <label for="pizza-size">Select Pizza Size:</label>
+                <select id="pizza-size" name="pizza-size">
+                    <option value="small">Small (10")</option>
+                    <option value="medium">Medium (14")</option>
+                    <option value="large">Large (18")</option>
+                </select>
+
+                <label for="crust-type">Select Crust Type:</label>
+                <select id="crust-type" name="crust-type">
+                    <option value="hand-tossed">Hand-Tossed</option>
+                    <option value="thin-crust">Thin Crust</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                </select>
+
+                <label for="toppings">Select Toppings:</label>
+                <ul id="toppings">
+                    <li>
+                        <input type="checkbox" id="pepperoni" name="toppings">
+                        <label for="pepperoni">Paneer</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="mushrooms" name="toppings">
+                        <label for="mushrooms">Mushrooms</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="onions" name="toppings">
+                        <label for="onions">Onions</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="extra-cheese" name="toppings">
+                        <label for="extra-cheese">Extra Cheese</label>
+                    </li>
+                </ul>
+
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
